@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="api.utilities.Listener"/>
+    </listeners>
+    <test verbose="2" name="API Testing">
+        <classes>
+            <class name="api.tests.UserTestWithExcelSingleData">
+                <methods>
+                    <include name="createUserTest"/>
+                    <include name="getUserTest"/>
+                    <include name="updateUserTest"/>
+                    <include name="deleteUserTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
